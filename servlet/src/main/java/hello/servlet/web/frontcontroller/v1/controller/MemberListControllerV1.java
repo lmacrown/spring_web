@@ -15,8 +15,7 @@ public class MemberListControllerV1 implements ControllerV1 {
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
     @Override
-    public void process(HttpServletRequest request, HttpServletResponse
-            response) throws ServletException, IOException {
+    public void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         List<Member> members = memberRepository.findAll();
 
